@@ -11,7 +11,8 @@ Install the gem globally:
 
 Add `FLOWDOCK_API_TOKEN=<your flowdock api token>` to your environment variables.
 
-Then run `bin/flowdock-notifications' as periodic as you'd like to receive messages (eg. every 30 seconds) from your cron.
+Then run `flowdock-notifications` as periodic as you'd like to receive messages (eg. every 30 seconds). You'll need to
+run it after X is loaded though for libnotify's dependency on dbus: that is, through your window manager -- cron won't work.
 
 ## Contributing
 
